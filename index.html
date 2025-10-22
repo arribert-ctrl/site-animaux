@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Accessoires Animaux</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- HEADER -->
+    <header class="bg-white shadow">
+      <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-gradient-to-br from-pink-400 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold">AA</div>
+          <div>
+            <h1 class="text-lg font-semibold">Top Accessoires Animaux</h1>
+            <p class="text-xs text-gray-500">Guides, tests & comparatifs pour vos animaux</p>
+          </div>
+        </div>
+        <nav class="hidden md:flex gap-6 text-sm">
+          <a class="hover:text-pink-600" href="#">Accueil</a>
+          <a class="hover:text-pink-600" href="#">Comparatifs</a>
+          <a class="hover:text-pink-600" href="#">Guides</a>
+          <a class="hover:text-pink-600" href="#">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main class="max-w-6xl mx-auto px-6 py-12">
+      <section class="grid md:grid-cols-3 gap-8 items-center">
+        <div class="md:col-span-2">
+          <h2 class="text-3xl font-extrabold leading-tight">
+            Les meilleurs accessoires pour vos animaux en 2025 🐶🐱
+          </h2>
+          <p class="mt-4 text-gray-600">
+            Tests indépendants, comparatifs pratiques et conseils pour rendre vos compagnons heureux et en bonne santé.
+          </p>
+          <div class="mt-6 flex gap-3">
+            <a class="inline-flex items-center gap-2 px-5 py-3 bg-pink-600 text-white rounded-md font-semibold" href="#">Voir le top 5</a>
+            <a class="inline-flex items-center gap-2 px-5 py-3 border rounded-md" href="#">Guide d'achat</a>
+          </div>
+        </div>
+        <aside class="bg-white rounded-lg shadow p-4">
+          <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=600&q=60" alt="Harnais GPS" class="rounded-md mb-3" />
+          <div>
+            <div class="font-semibold">Harnais GPS pour chien</div>
+            <p class="text-sm text-gray-500">Suivi GPS, confortable et résistant.</p>
+            <div class="mt-3 flex items-center justify-between">
+              <span class="text-lg font-bold text-green-600">49€</span>
+              <a href="#" class="bg-green-600 text-white px-3 py-2 rounded-md text-sm">Voir l'offre</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- PRODUITS -->
+      <section class="mt-12">
+        <h3 class="text-2xl font-bold">Produits recommandés</h3>
+        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="bg-white rounded-lg shadow overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1603589124913-8c2f2e0fdbef?auto=format&fit=crop&w=600&q=60" alt="Fontaine à eau" class="w-full h-44 object-cover" />
+            <div class="p-4">
+              <h4 class="font-semibold">Fontaine à eau pour chat</h4>
+              <p class="text-sm text-gray-500 mt-1">Eau fraîche en continu, silencieuse.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <div>
+                  <div class="text-lg font-bold">35€</div>
+                  <div class="text-xs text-gray-500">Note 4.5 / 5</div>
+                </div>
+                <a href="#" class="px-4 py-2 bg-pink-600 text-white rounded-md text-sm">Voir sur Amazon</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-lg shadow overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1583337130417-2d6debf47128?auto=format&fit=crop&w=600&q=60" alt="Jouet chat" class="w-full h-44 object-cover" />
+            <div class="p-4">
+              <h4 class="font-semibold">Jouet interactif pour chat</h4>
+              <p class="text-sm text-gray-500 mt-1">Stimule l'activité et chasse l'ennui.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <div>
+                  <div class="text-lg font-bold">19€</div>
+                  <div class="text-xs text-gray-500">Note 4.7 / 5</div>
+                </div>
+                <a href="#" class="px-4 py-2 bg-pink-600 text-white rounded-md text-sm">Voir sur Amazon</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER -->
+      <section class="mt-16 bg-white p-6 rounded-lg shadow text-center">
+        <h4 class="text-xl font-bold">Recevez nos bons plans 🐾</h4>
+        <p class="text-gray-500 mt-2">Promos, nouveautés et astuces pour vos compagnons chaque semaine.</p>
+        <form class="mt-4 flex flex-col sm:flex-row justify-center gap-3">
+          <input type="email" placeholder="Votre email" class="border rounded-md px-4 py-2 w-full sm:w-1/2" required />
+          <button type="submit" class="bg-pink-600 text-white px-5 py-2 rounded-md">S'inscrire</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-16 bg-gray-800 text-gray-300 text-sm py-6">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-3">
+        <p>© 2025 Top Accessoires Animaux. Tous droits réservés.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-white">Mentions légales</a>
+          <a href="#" class="hover:text-white">Confidentialité</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
