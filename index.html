@@ -1,111 +1,115 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Mon univers animalier</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 10px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            background: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        section h2 {
-            color: #4CAF50;
-            margin-bottom: 10px;
-        }
-        .accessoires img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin: 10px;
-            border-radius: 8px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #333;
-            color: white;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon Univers Animalier</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Roboto', sans-serif; background: #fefefe; color: #333; }
+  header {
+    background: url('banniere.jpg') center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+  }
+  header h1 { font-size: 3rem; }
+  nav { display: flex; justify-content: center; gap: 20px; padding: 15px; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+  nav a { text-decoration: none; color: #333; font-weight: 500; }
+  nav a:hover { color: #4CAF50; }
+  main { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+  .section-title { font-size: 2rem; margin-bottom: 15px; color: #4CAF50; }
+  .intro { text-align: center; margin-bottom: 50px; }
+  .intro p { font-size: 1.2rem; line-height: 1.8; max-width: 700px; margin: 0 auto; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+  .card { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s; }
+  .card:hover { transform: translateY(-5px); }
+  .card img { width: 100%; height: 200px; object-fit: cover; }
+  .card-content { padding: 15px; }
+  .card-content h3 { margin-bottom: 10px; color: #4CAF50; }
+  .card-content p { font-size: 0.95rem; line-height: 1.5; }
+  footer { text-align: center; padding: 25px; background: #333; color: white; margin-top: 50px; }
+</style>
 </head>
 <body>
 
 <header>
-    <h1>Bienvenue dans mon univers animalier</h1>
+  <h1>Mon Univers Animalier</h1>
 </header>
 
 <nav>
-    <a href="#presentation">À propos de moi</a>
-    <a href="#conseils">Conseils & Bons plans</a>
-    <a href="#accessoires">Accessoires</a>
+  <a href="#about">À propos</a>
+  <a href="#tips">Conseils</a>
+  <a href="#accessories">Accessoires</a>
 </nav>
 
 <main>
-    <section id="presentation">
-        <h2>À propos de moi</h2>
-        <p>Depuis toujours passionné par les animaux, j’ai acquis une solide expérience dans leur soin et leur bien-être. J’ai décidé de partager ici mes impressions, astuces et bons plans pour tous les propriétaires d’animaux.</p>
-    </section>
+  <section id="about" class="intro">
+    <h2 class="section-title">À propos de moi</h2>
+    <p>Passionné par les animaux depuis toujours, je partage ici mes expériences, mes conseils et mes bons plans pour offrir le meilleur à nos compagnons à quatre pattes.</p>
+  </section>
 
-    <section id="conseils">
-        <h2>Conseils & Bons plans</h2>
-        <ul>
-            <li>Choisir le bon aliment pour votre compagnon selon son âge et sa race.</li>
-            <li>Les accessoires incontournables pour le confort et la sécurité.</li>
-            <li>Mes astuces pour économiser tout en offrant le meilleur.</li>
-        </ul>
-    </section>
-
-    <section id="accessoires" class="accessoires">
-        <h2>Accessoires pour nos compagnons</h2>
-        <p>Voici quelques-uns des articles que j’utilise et recommande :</p>
-        <div>
-            <img src="accessoire1.jpg" alt="Accessoire 1">
-            <img src="accessoire2.jpg" alt="Accessoire 2">
-            <img src="accessoire3.jpg" alt="Accessoire 3">
+  <section id="tips">
+    <h2 class="section-title">Conseils & Bons plans</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="conseil1.jpg" alt="Conseil 1">
+        <div class="card-content">
+          <h3>Alimentation adaptée</h3>
+          <p>Comment choisir le meilleur aliment pour votre compagnon selon son âge et sa race.</p>
         </div>
-    </section>
+      </div>
+      <div class="card">
+        <img src="conseil2.jpg" alt="Conseil 2">
+        <div class="card-content">
+          <h3>Accessoires essentiels</h3>
+          <p>Découvrez les accessoires indispensables pour le confort et la sécurité de votre animal.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="conseil3.jpg" alt="Conseil 3">
+        <div class="card-content">
+          <h3>Bons plans</h3>
+          <p>Mes astuces pour économiser tout en offrant le meilleur à votre compagnon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="accessories">
+    <h2 class="section-title">Accessoires recommandés</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="accessoire1.jpg" alt="Accessoire 1">
+        <div class="card-content">
+          <h3>Accessoire 1</h3>
+          <p>Une description courte et pratique de l’accessoire.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="accessoire2.jpg" alt="Accessoire 2">
+        <div class="card-content">
+          <h3>Accessoire 2</h3>
+          <p>Une description courte et pratique de l’accessoire.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="accessoire3.jpg" alt="Accessoire 3">
+        <div class="card-content">
+          <h3>Accessoire 3</h3>
+          <p>Une description courte et pratique de l’accessoire.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
-    &copy; 2025 Mon Univers Animalier. Tous droits réservés.
+  &copy; 2025 Mon Univers Animalier. Tous droits réservés.
 </footer>
 
 </body>
