@@ -1,178 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Top Accessoires Animaux</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-gray-50 text-gray-800">
-    <!-- HEADER -->
-    <header class="bg-white shadow">
-      <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
-        <div class="flex items-center gap-4">
-          <div class="w-10 h-10 bg-gradient-to-br from-pink-400 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold">AA</div>
-          <div>
-            <h1 class="text-lg font-semibold">Top Accessoires Animaux</h1>
-            <p class="text-xs text-gray-500">Guides, tests & comparatifs pour vos animaux</p>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Mon univers animalier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .accessoires img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenue dans mon univers animalier</h1>
+</header>
+
+<nav>
+    <a href="#presentation">À propos de moi</a>
+    <a href="#conseils">Conseils & Bons plans</a>
+    <a href="#accessoires">Accessoires</a>
+</nav>
+
+<main>
+    <section id="presentation">
+        <h2>À propos de moi</h2>
+        <p>Depuis toujours passionné par les animaux, j’ai acquis une solide expérience dans leur soin et leur bien-être. J’ai décidé de partager ici mes impressions, astuces et bons plans pour tous les propriétaires d’animaux.</p>
+    </section>
+
+    <section id="conseils">
+        <h2>Conseils & Bons plans</h2>
+        <ul>
+            <li>Choisir le bon aliment pour votre compagnon selon son âge et sa race.</li>
+            <li>Les accessoires incontournables pour le confort et la sécurité.</li>
+            <li>Mes astuces pour économiser tout en offrant le meilleur.</li>
+        </ul>
+    </section>
+
+    <section id="accessoires" class="accessoires">
+        <h2>Accessoires pour nos compagnons</h2>
+        <p>Voici quelques-uns des articles que j’utilise et recommande :</p>
+        <div>
+            <img src="accessoire1.jpg" alt="Accessoire 1">
+            <img src="accessoire2.jpg" alt="Accessoire 2">
+            <img src="accessoire3.jpg" alt="Accessoire 3">
         </div>
-        <nav class="hidden md:flex gap-6 text-sm">
-          <a class="hover:text-pink-600" href="#">Accueil</a>
-          <a class="hover:text-pink-600" href="#">Comparatifs</a>
-          <a class="hover:text-pink-600" href="#">Guides</a>
-          <a class="hover:text-pink-600" href="#">Contact</a>
-        </nav>
-      </div>
-    </header>
+    </section>
+</main>
 
-    <!-- HERO -->
-    
-    <section>
-  <h2 class="text-3xl font-bold mb-4">Top 5 Harnais pour chien 2025</h2>
-  <p class="text-gray-600 mb-6">Découvrez notre sélection de 5 harnais pour chien confortables et pratiques, adaptés à différentes tailles et besoins.</p>
+<footer>
+    &copy; 2025 Mon Univers Animalier. Tous droits réservés.
+</footer>
 
-  <!-- Produit 1 -->
-  <div class="bg-white rounded-lg shadow p-6 mb-6">
-    <h3 class="text-2xl font-semibold mb-2">Harnais Patte Chic – Modèle 1</h3>
-    <img src="https://m.media-amazon.com/images/I/71IVrOe0j3L._AC_SL1500_.jpg" alt="Harnais Patte Chic" class="w-full h-56 object-cover rounded-md mb-4" />
-    <ul class="list-disc list-inside mb-3">
-      <li><strong>Avantages :</strong> Ajustable, rembourré, facile à mettre et retirer.</li>
-      <li><strong>Inconvénients :</strong> Peut être un peu large pour très petits chiens.</li>
-    </ul>
-    <a href="https://www.amazon.fr/dp/B09J867KR3?tag=jearribe-21" class="inline-block px-5 py-3 bg-pink-600 text-white rounded-md">Voir sur Amazon</a>
-  </div>
-
-  <!-- Produit 2 -->
-  <div class="bg-white rounded-lg shadow p-6 mb-6">
-    <h3 class="text-2xl font-semibold mb-2">Harnais Rabbitgoo – Modèle 2</h3>
-    <img src="https://m.media-amazon.com/images/I/71G2SzBzz5L._AC_SL1500_.jpg" alt="Harnais Rabbitgoo" class="w-full h-56 object-cover rounded-md mb-4" />
-    <ul class="list-disc list-inside mb-3">
-      <li><strong>Avantages :</strong> Réglable, bande réfléchissante, confortable pour la marche quotidienne.</li>
-      <li><strong>Inconvénients :</strong> Les sangles peuvent glisser si mal ajustées.</li>
-    </ul>
-    <a href="https://www.amazon.fr/rabbitgoo-Harnais-Traction-R%C3%A9glable-R%C3%A9fl%C3%A9chissant/dp/B0CQX4HFL8?tag=jearribe-21" class="inline-block px-5 py-3 bg-pink-600 text-white rounded-md">Voir sur Amazon</a>
-  </div>
-
-  <!-- Produit 3 -->
-  <div class="bg-white rounded-lg shadow p-6 mb-6">
-    <h3 class="text-2xl font-semibold mb-2">Harnais IDC Power – Modèle 3</h3>
-    <img src="https://m.media-amazon.com/images/I/71XU0iHh7kL._AC_SL1500_.jpg" alt="Harnais IDC Power" class="w-full h-56 object-cover rounded-md mb-4" />
-    <ul class="list-disc list-inside mb-3">
-      <li><strong>Avantages :</strong> Très robuste, idéal pour les chiens forts, anneau arrière et frontal pour traction.</li>
-      <li><strong>Inconvénients :</strong> Plus lourd, moins adapté aux petites races.</li>
-    </ul>
-    <a href="https://www.amazon.fr/Harnais-IDC-Power-Taille-Noir/dp/B003BZ4I9A?tag=jearribe-21" class="inline-block px-5 py-3 bg-pink-600 text-white rounded-md">Voir sur Amazon</a>
-  </div>
-
-  <!-- Produit 4 -->
-  <div class="bg-white rounded-lg shadow p-6 mb-6">
-    <h3 class="text-2xl font-semibold mb-2">Harnais réglable SportPet – Modèle 4</h3>
-    <img src="https://m.media-amazon.com/images/I/71R+pM+IJeL._AC_SL1500_.jpg" alt="Harnais SportPet" class="w-full h-56 object-cover rounded-md mb-4" />
-    <ul class="list-disc list-inside mb-3">
-      <li><strong>Avantages :</strong> Léger, respirant, facile à enfiler et retirer.</li>
-      <li><strong>Inconvénients :</strong> Moins résistant pour chiens très puissants.</li>
-    </ul>
-    <a href="https://www.amazon.fr/gp/aw/d/B0C77JJLW2?tag=jearribe-21" class="inline-block px-5 py-3 bg-pink-600 text-white rounded-md">Voir sur Amazon</a>
-  </div>
-
-  <!-- Produit 5 -->
-  <div class="bg-white rounded-lg shadow p-6 mb-6">
-    <h3 class="text-2xl font-semibold mb-2">Harnais confort Canine – Modèle 5</h3>
-    <img src="https://m.media-amazon.com/images/I/71tDldL5xVL._AC_SL1500_.jpg" alt="Harnais confort Canine" class="w-full h-56 object-cover rounded-md mb-4" />
-    <ul class="list-disc list-inside mb-3">
-      <li><strong>Avantages :</strong> Design confortable, plusieurs tailles disponibles, pratique pour promenades quotidiennes.</li>
-      <li><strong>Inconvénients :</strong> Boucles un peu difficiles à manipuler pour certains utilisateurs.</li>
-    </ul>
-    <a href="https://www.amazon.fr/gp/aw/d/B09ZPJ8YGH?tag=jearribe-21" class="inline-block px-5 py-3 bg-pink-600 text-white rounded-md">Voir sur Amazon</a>
-  </div>
-</section>
-
-
-
-    <main class="max-w-6xl mx-auto px-6 py-12">
-      <section class="grid md:grid-cols-3 gap-8 items-center">
-        <div class="md:col-span-2">
-          <h2 class="text-3xl font-extrabold leading-tight">
-            Les meilleurs accessoires pour vos animaux en 2025 🐶🐱
-          </h2>
-          <p class="mt-4 text-gray-600">
-            Tests indépendants, comparatifs pratiques et conseils pour rendre vos compagnons heureux et en bonne santé.
-          </p>
-          <div class="mt-6 flex gap-3">
-            <a class="inline-flex items-center gap-2 px-5 py-3 bg-pink-600 text-white rounded-md font-semibold" href="#">Voir le top 5</a>
-            <a class="inline-flex items-center gap-2 px-5 py-3 border rounded-md" href="#">Guide d'achat</a>
-          </div>
-        </div>
-        <aside class="bg-white rounded-lg shadow p-4">
-          <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=600&q=60" alt="Harnais GPS" class="rounded-md mb-3" />
-          <div>
-            <div class="font-semibold">Harnais GPS pour chien</div>
-            <p class="text-sm text-gray-500">Suivi GPS, confortable et résistant.</p>
-            <div class="mt-3 flex items-center justify-between">
-              <span class="text-lg font-bold text-green-600">49€</span>
-              <a href="#" class="bg-green-600 text-white px-3 py-2 rounded-md text-sm">Voir l'offre</a>
-            </div>
-          </div>
-        </aside>
-      </section>
-
-      <!-- PRODUITS -->
-      <section class="mt-12">
-        <h3 class="text-2xl font-bold">Produits recommandés</h3>
-        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <article class="bg-white rounded-lg shadow overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1603589124913-8c2f2e0fdbef?auto=format&fit=crop&w=600&q=60" alt="Fontaine à eau" class="w-full h-44 object-cover" />
-            <div class="p-4">
-              <h4 class="font-semibold">Fontaine à eau pour chat</h4>
-              <p class="text-sm text-gray-500 mt-1">Eau fraîche en continu, silencieuse.</p>
-              <div class="mt-4 flex items-center justify-between">
-                <div>
-                  <div class="text-lg font-bold">35€</div>
-                  <div class="text-xs text-gray-500">Note 4.5 / 5</div>
-                </div>
-                <a href="#" class="px-4 py-2 bg-pink-600 text-white rounded-md text-sm">Voir sur Amazon</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="bg-white rounded-lg shadow overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1583337130417-2d6debf47128?auto=format&fit=crop&w=600&q=60" alt="Jouet chat" class="w-full h-44 object-cover" />
-            <div class="p-4">
-              <h4 class="font-semibold">Jouet interactif pour chat</h4>
-              <p class="text-sm text-gray-500 mt-1">Stimule l'activité et chasse l'ennui.</p>
-              <div class="mt-4 flex items-center justify-between">
-                <div>
-                  <div class="text-lg font-bold">19€</div>
-                  <div class="text-xs text-gray-500">Note 4.7 / 5</div>
-                </div>
-                <a href="#" class="px-4 py-2 bg-pink-600 text-white rounded-md text-sm">Voir sur Amazon</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- NEWSLETTER -->
-      <section class="mt-16 bg-white p-6 rounded-lg shadow text-center">
-        <h4 class="text-xl font-bold">Recevez nos bons plans 🐾</h4>
-        <p class="text-gray-500 mt-2">Promos, nouveautés et astuces pour vos compagnons chaque semaine.</p>
-        <form class="mt-4 flex flex-col sm:flex-row justify-center gap-3">
-          <input type="email" placeholder="Votre email" class="border rounded-md px-4 py-2 w-full sm:w-1/2" required />
-          <button type="submit" class="bg-pink-600 text-white px-5 py-2 rounded-md">S'inscrire</button>
-        </form>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="mt-16 bg-gray-800 text-gray-300 text-sm py-6">
-      <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-3">
-        <p>© 2025 Top Accessoires Animaux. Tous droits réservés.</p>
-        <div class="flex gap-4">
-          <a href="#" class="hover:text-white">Mentions légales</a>
-          <a href="#" class="hover:text-white">Confidentialité</a>
-        </div>
-      </div>
-    </footer>
-  </body>
+</body>
 </html>
